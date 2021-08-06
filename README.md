@@ -19,7 +19,7 @@ This coding example is part of a Udemy Python course using Python to detect face
 
 - [OpenCV](https://github.com/opencv)
   - open-source library that includes several hundreds of computer vision algorithms.
-- [OpenCV haarcascades](https://github.com/opencv/opencv/tree/master/data/haarcascades)
+- [OpenCV haar-cascade](https://github.com/opencv/opencv/tree/master/data/haarcascades)
   - OpenCV xml data containing trained classifiers for detecting objects of a particular type e.g. faces, people, vehicles etc.
 
 ### **Tools** ###
