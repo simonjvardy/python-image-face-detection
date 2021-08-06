@@ -32,12 +32,13 @@ print(type(faces))
 print(faces)
 
 # resize the output image
-resized = cv2.resize(
+resized_image = cv2.resize(
     image,
     (int(image.shape[1]/3),int(image.shape[0]/3))
 )
 
-cv2.imshow("Output", resized)
+cv2.imshow("Output", resized_image)
+cv2.imwrite("assets/img/readme_img1.jpg", resized_image)
 
 # open the image for a defined period or on key click, then close
 cv2.waitKey(0)

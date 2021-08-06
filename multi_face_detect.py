@@ -4,7 +4,7 @@ import cv2
 face_cascade = cv2.CascadeClassifier("assets/xml/haarcascade_frontalface_default.xml")
 
 # load the image to be assessed
-image = cv2.imread("assets/img/photo.jpg")
+image = cv2.imread("assets/img/news.jpg")
 
 # OpenCV is more accurate finding faces in greyscale images
 # Convert the source image to greyscale for furhter processing
@@ -14,7 +14,7 @@ grey_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 # top-left(x,y), width value, height value
 faces = face_cascade.detectMultiScale(
     grey_image,
-    scaleFactor=1.05,
+    scaleFactor=1.1,
     minNeighbors=5
 )
 
@@ -32,12 +32,13 @@ print(type(faces))
 print(faces)
 
 # resize the output image
-resized = cv2.resize(
+resized_image = cv2.resize(
     image,
     (int(image.shape[1]/3),int(image.shape[0]/3))
 )
 
-cv2.imshow("Output", resized)
+cv2.imshow("Output", resized_image)
+cv2.imwrite("assets/img/readme_img2.jpg", resized_image)
 
 # open the image for a defined period or on key click, then close
 cv2.waitKey(0)
