@@ -64,11 +64,25 @@ git clone https://github.com/simonjvardy/python-image-face-detection.git
 
 #### **Run the application locally** ####
 
-- To run the application, enter the following command into the terminal window:
+- To run the face detection application, enter the following command into the terminal window:
 
 ```Python
-python3 
+python3 face_detect.py
 ```
+
+- the output image file contains the image with a green rectangle surrounding the detected face.
+
+![Single face image](assets/img/readme_img1.jpg)
+
+- To run the face detection application for multiple faces, enter the following command into the terminal window:
+
+```Python
+python3 multi_face_detect.py
+```
+
+- the output image file contains the image with a green rectangle surrounding the detected faces. In the example image below, OpenCv was unable to detect the face on the right chewing the newspaper page as it is partially obscured.
+
+![Multi face image](assets/img/readme_img2.jpg)
 
 ---
 
