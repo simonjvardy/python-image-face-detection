@@ -28,8 +28,8 @@ for x, y, w, h in faces:
         3
     )
 
-print(type(faces))
-print(faces)
+# print(type(faces))
+# print(faces)
 
 # resize the output image
 resized_image = cv2.resize(
